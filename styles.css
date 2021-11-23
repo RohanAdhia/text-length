@@ -1,0 +1,49 @@
+body {
+  background-color: #E9A6A6;
+  visibility: hidden;
+}
+
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  border-top: solid 0.3rem #3F3351;
+  border-bottom: solid 0.3rem #3F3351;
+  text-align: center;
+  display: table;
+  color: #3F3351;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+}
+
+.text-area {
+  display: block;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  resize: none;
+}
+
+#count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  color: #3F3351;
+}
+
+.devtxt {
+  font-family: 'Montserrat', sans-serif;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  color: #1F1D36;
+}
+
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive; */
