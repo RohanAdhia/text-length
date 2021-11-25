@@ -1,226 +1,49 @@
-/* Include the padding and border in an element's total width and height */
-* {
-  box-sizing: border-box;
+body {
+  background-color: #E9A6A6;
+  visibility: hidden;
 }
 
-#myInput {
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Remove margins and padding from the list */
-ul {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
-
-/* Style the list items */
-ul li {
-  cursor: pointer;
-  position: relative;
-  padding: 12px 8px 12px 40px;
-  background: #eee;
-  font-size: 18px;
-  transition: 0.2s;
-  /* border: 0.5px solid #000; */
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-/* Set all odd list items to a different color (zebra-stripes) */
-ul li:nth-child(odd) {
-  background: #f9f9f9;
-}
-
-/* Darker background-color on hover */
-ul li:hover {
-  background: #ddd;
-}
-
-/* When clicked on, add a background color and strike out text */
-ul li.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
-
-/* Add a "checked" mark when clicked on */
-ul li.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-}
-
-/* Style the close button */
-.close {
-  position: absolute;
-  right: 0;
-  top: 0;
-  padding: 12px 16px 12px 16px;
-}
-
-.close:hover {
-  background-color: #f44336;
-  color: white;
-}
-
-/* Style the edit button */
-.edit {
-  position: absolute;
-  right: 3%;
-  top: 0;
-  padding: 10px 16px 10px 16px;
-}
-
-.edit:hover {
-  background-color: green;
-  color: white;
-}
-
-/* Style the header */
-.header {
-  /* background-color: #87AAAA; */
-  /* background-color: #FFE699; */
-  background-color: #B4C6A6;
-  padding: 30px 40px;
-  color: white;
+.title {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 6rem;
+  border-top: solid 0.3rem #3F3351;
+  border-bottom: solid 0.3rem #3F3351;
   text-align: center;
-}
-
-.header-text {
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: 2.5rem;
-  color: #000;
-}
-
-.dev-text {
-  font-family: 'Montserrat', sans-serif;
-  /* font-family: 'Roboto', sans-serif; */
-  font-size: 1rem;
-  margin-bottom: 02rem;
-  color: #000;
-}
-
-/* Clear floats after the header */
-.header:after {
-  content: "";
   display: table;
-  clear: both;
+  color: #3F3351;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
 }
 
-/* Style the input */
-input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  /* width: 75%; */
-  width: 60%;
-  padding: 10px;
-  /* float: left; */
-  display: inline-block;
-  font-size: 16px;
+.text-area {
+  display: block;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: scroll;
+  resize: none;
 }
 
-/* Style the "Add" button */
-.addBtn {
-  padding: 8px;
-  display: inline-block;
-  margin-left: 2.1875rem;
-  width: 20%;
-  /* background: #87AAAA; */
-  /* background-color:#FFE699; */
-  background-color: #B4C6A6;
-  border: 2px solid #000;
-  /* font-family: 'Roboto', sans-serif; */
+#count {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3rem;
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2%;
+  color: #3F3351;
+}
+
+.devtxt {
   font-family: 'Montserrat', sans-serif;
-  color: #000;
-  /* float: left; */
-  text-align: center;
-  font-size: 16px;
-  cursor: pointer;
-  transition: 0.3s;
-  border-radius: 0;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 2%;
+  color: #1F1D36;
 }
 
-.addBtn:hover {
-  /* background-color: #C8E3D4; */
-  /* background-color: #FFF9B6; */
-  background-color: #FFC286;
-}
-
-/*
-  ##Device = Desktops
-  ##Screen = 1281px to higher resolution desktops
-*/
-
-@media (min-width: 1281px) {
-
-  /* CSS */
-
-}
-
-/*
-  ##Device = Laptops, Desktops
-  ##Screen = B/w 1025px to 1280px
-*/
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-
-  /* CSS */
-
-}
-
-/*
-  ##Device = Tablets, Ipads (portrait)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) {
-
-  /* CSS */
-
-}
-
-/*
-  ##Device = Tablets, Ipads (landscape)
-  ##Screen = B/w 768px to 1024px
-*/
-
-@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
-
-  /* CSS */
-
-}
-
-/*
-  ##Device = Low Resolution Tablets, Mobiles (Landscape)
-  ##Screen = B/w 481px to 767px
-*/
-
-@media (min-width: 481px) and (max-width: 767px) {
-
-  /* CSS */
-
-}
-
-/*
-  ##Device = Most of the Smartphones Mobiles (Portrait)
-  ##Screen = B/w 320px to 479px
-*/
-
-@media (min-width: 320px) and (max-width: 480px) {
-
-  /* CSS */
-
-}
+/* font-family: 'Bebas Neue', cursive;
+font-family: 'Montserrat', sans-serif;
+font-family: 'Pacifico', cursive; */
